@@ -1,0 +1,53 @@
+header {
+    height: 250px;
+    color: #e65f5c;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    color: #e65f5c;
+    font-weight: bold;
+}
+
+.hellobookslogo {
+    max-width: 150px;
+    fill: #e65f5c;
+}
+
+body {
+    background-color: #0f0326;
+    font-family: 'Karla', sans-serif !important;
+
+}
+
+.my-nav {
+    margin-top: 80px;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav a:link {
+    color: #b5d99c !important;
+}
+
+nav a:hover {
+    color: #ffff82 !important;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #f5f7dc;
+    box-shadow: #9f9baa 4px 4px;
+}
+
+.btn {
+    background-color: #e65f5c;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffff82;
+}
