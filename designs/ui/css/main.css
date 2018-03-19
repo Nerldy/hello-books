@@ -1,6 +1,6 @@
 header {
     height: 250px;
-    color: #e65f5c;
+    color: #ffff82;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h2 {
 
 .hellobookslogo {
     max-width: 150px;
-    fill: #e65f5c;
+    fill: #ffff82;
 }
 
 body {
