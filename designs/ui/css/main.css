@@ -17,11 +17,20 @@ h2 {
     fill: #ffff82;
 }
 
+.sticky-top {
+    padding-top: 20px;
+}
+
 body {
     background-color: #0f0326;
     font-family: 'Karla', sans-serif !important;
 
 }
+
+/*
+Navigation Style
+------------------------------------------
+*/
 
 .my-nav {
     margin-top: 80px;
@@ -40,14 +49,34 @@ nav a:hover {
     font-weight: bold;
 }
 
+/*
+Cards Style
+------------------------------------------
+*/
+
 .card {
     background-color: #f5f7dc;
     box-shadow: #9f9baa 4px 4px;
+    margin-bottom: 20px;
 }
 
-.btn {
+.card-body .btn {
     background-color: #e65f5c;
     font-style: italic;
     font-weight: bold;
     color: #ffff82;
+}
+
+h2 + footer {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer + p {
+    margin-bottom: 30px;
+}
+
+.card-body h2 {
+    margin-bottom: 0;
 }
