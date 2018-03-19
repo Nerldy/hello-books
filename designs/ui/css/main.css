@@ -62,6 +62,7 @@ article {
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: #a39f6c 6px 6px;
 }
 
 article footer {
@@ -77,7 +78,6 @@ article button {
     padding: 5px 10px;
     border-radius: 3px;
 }
-
 
 /*Color
 -----------------
@@ -111,6 +111,12 @@ article:nth-child(2n) {
 /*links*/
 a:link, a:visited {
     color: #f5f7dc;
+}
+
+a:hover {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ffff82;
 }
 
 article button {
@@ -155,4 +161,23 @@ article button {
 article button a:link {
     font-style: italic;
     font-weight: bold;
+}
+
+/*Media Query
+-----------------
+*/
+
+@media screen and  (max-width: 688px) {
+    nav {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        /*max-width: 940px;*/
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        /*grid-gap: 20px;*/
+        /*position: relative;*/
+    }
 }
