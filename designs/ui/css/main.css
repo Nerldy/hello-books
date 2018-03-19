@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
+}
+
+html {
+    background-color: #0f0326;
+}
+
+/*Layout
+-----------------
+*/
+
+/*grid main container settings*/
+.grid {
+    display: grid;
+    max-width: 940px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+/*Navigation Links Display*/
+nav a {
+    display: block;
+}
+
+header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    height: 250px;
+    justify-self: end;
+    /*align-self: center;*/
+}
+
+header h1 {
+    padding-top: 120px;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    padding: 60px 0 0 15%;
+}
+
+nav .my-books-logo {
+    padding-bottom: 60px;
+}
+
+main {
+    grid-row: 2;
+    grid-column: 2 / 3;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+article footer {
+    margin: 10px 0 15px;
+}
+
+article p {
+    margin-bottom: 30px;
+}
+
+article button {
+    margin-bottom: 5;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+
+/*Color
+-----------------
+*/
+
+.my-books-logo {
+    fill: #ffff82;
+    max-width: 70%;
+}
+
+h1 {
+    color: #f5f7dc;
+}
+
+h2 {
+    color: #e65f5c;
+}
+
+nav {
+    background-color: #e65f5c;
+}
+
+article:nth-child(2n+1) {
+    background-color: #f5f7dc;
+}
+
+article:nth-child(2n) {
+    background-color: #b5d99c;
+}
+
+/*links*/
+a:link, a:visited {
+    color: #f5f7dc;
+}
+
+article button {
+    background-color: #e65f5c;
+    border: none;
+}
+
+article button a:link, article button a:visited {
+    color: #ffff82;
+}
+
+/*Typography
+-----------------
+*/
+p {
+    word-spacing: 0.1em;
+    line-height: 1.8;
+}
+
+a:link {
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+article footer {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+article button {
+    letter-spacing: 0.2em;
+    font-size: 0.7em;
+}
+
+article button a:link {
+    font-style: italic;
+    font-weight: bold;
+}
