@@ -11,3 +11,10 @@ export FLASK_APP=hello_books.py
 export FLASK_DEBUG=1
 flask run
 ```
+
+On your browser, go to ***localhost:5000***
+
+Available urls right now are:
+- 
+* __user/signin__
+* __user/signup__
