@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+
+{% endblock %}
+
 {% block main %}
     <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br> <a href="#">click
         here to
