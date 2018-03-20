@@ -10,12 +10,25 @@
             rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/main.css">
-
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 
+    <!--Line Awsome Font-->
+    <script
+            defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"
+            integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+            crossorigin="anonymous"></script>
+    <script
+            defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"
+            integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+            crossorigin="anonymous"></script>
 
-    <title>Rent A Book</title>
+
+    <!--Admin CSS-->
+    <link rel="stylesheet" href="css/admin.css">
+
+
+    <title>Admin</title>
 </head>
 <body>
     <div class="container">
@@ -85,20 +98,18 @@
                         </svg>
                     </a>
                     <nav class="nav flex-column">
-                        <a href="#" class="nav-link">MY PROFILE</a>
-                        <a href="#" class="nav-link">TIME MACHINE</a>
-                        <a href="#" class="nav-link">RENT A BOOK</a>
+                        <a href="#" class="nav-link">ADMIN HOME</a>
                         <a href="#" class="nav-link">SIGN OUT</a>
                     </nav>
                 </div>
             </div>
 
             <div class="col-sm-8">
-                <header class="row align-items-center justify-content-end">
-                    <h1>Rent A Book</h1>
-                </header>
 
                 <main>
+                    <h1>All Books</h1>
+
+                    <button>Add Book</button>
                     <article class="card">
                         <div class="card-body">
                             <h2 class="card-title">BOOK TITLE HERE</h2>
@@ -116,7 +127,14 @@
                                 facere fuga itaque necessitatibus perspiciatis reiciendis, veritatis?
                             </p>
 
-                            <button class="btn">Rent this book</button>
+                            <div class="card-icon">
+                                <span><i
+                                        class="fas fa-edit"
+                                        title="Edit this file"></i></span>
+                                <span><i
+                                        class="fas fa-trash-alt"
+                                        title="Delete this file"></i></span>
+                            </div>
                         </div>
                     </article>
                     <article class="card">
@@ -200,6 +218,10 @@
                         </div>
                     </article>
                 </main>
+
+                <footer>
+                    <p>Fonts by <a href="https://icons8.com">Icon pack by Icons8</a></p>
+                </footer>
             </div>
         </div>
     </div>
@@ -218,5 +240,7 @@
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+
+    <script src="js/es6/main.js"></script>
 </body>
 </html>
