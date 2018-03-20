@@ -50,6 +50,23 @@ nav a:hover {
 }
 
 /*
+Button Style
+------------------------------------------
+*/
+
+main .btn {
+    background-color: #e65f5c;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffff82;
+    margin-bottom: 30px;
+}
+
+main .btn:hover {
+    background-color: #0f0326;
+}
+
+/*
 Cards Style
 ------------------------------------------
 */
@@ -58,13 +75,6 @@ Cards Style
     background-color: #f5f7dc;
     box-shadow: #9f9baa 4px 4px;
     margin-bottom: 20px;
-}
-
-.card-body .btn {
-    background-color: #e65f5c;
-    font-style: italic;
-    font-weight: bold;
-    color: #ffff82;
 }
 
 h2 + footer {
@@ -89,4 +99,13 @@ Card Icon Style
     display: inline-block;
     margin-right: 20px;
     color: #e65f5c;
+}
+
+.card-icon span:hover {
+    color: #0f0326;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: red;
 }
