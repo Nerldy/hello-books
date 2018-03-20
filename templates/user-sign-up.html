@@ -1,37 +1,39 @@
-        <main>
-            <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br> <a href="#">click
-                here to
-                Sign In</a>
-            </h1>
+{% extends "base.html" %}
 
-            <!--sign in form-->
-            <form>
-                <div class="form-group">
-                    <label for="first_name">First Name</label>
-                    <input
-                            type="text" class="form-control" id="first_name" required>
-                </div>
+{% block main %}
+    <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br> <a href="#">click
+        here to
+        Sign In</a>
+    </h1>
 
-                <div class="form-group">
-                    <label for="last_name">Last Name</label>
-                    <input
-                            type="text" class="form-control" id="last_name" required>
-                </div>
+    <!--sign in form-->
+    <form>
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input
+                    type="text" class="form-control" id="first_name" required>
+        </div>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input
-                            type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
-                    </small>
-                </div>
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input
+                    type="text" class="form-control" id="last_name" required>
+        </div>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" required>
-                </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input
+                    type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+            </small>
+        </div>
 
-                <button type="submit" class="btn">Sign Up</button>
-            </form>
-        </main>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+{% endblock %}
