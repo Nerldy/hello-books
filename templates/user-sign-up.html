@@ -9,7 +9,8 @@
 {% endblock %}
 
 {% block main %}
-    <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br> <a href="#">click
+    <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br> <a
+            href="{{ url_for('user_sign_in') }}">click
         here to
         Sign In</a>
     </h1>
