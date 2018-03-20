@@ -15,5 +15,11 @@ def user_sign_in():
 	return render_template('user-sign-in.html', title='Sign In')
 
 
+# user home
+@app.route('/user/userhome')
+def user_home():
+	return render_template('user-home.html', title='My Profile')
+
+
 if __name__ == '__main__':
 	app.run(debug=1)
