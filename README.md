@@ -20,3 +20,5 @@ Available urls right now are:
 * __user/signup__
 * __user/home__
 * __admin/home__
+* __admin/search/notreturned__
+* __admin/admin/search/userborrowed__
