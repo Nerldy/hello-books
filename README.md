@@ -18,4 +18,4 @@ Available urls right now are:
 - 
 * __user/signin__
 * __user/signup__
-* __user/userhome__
+* __user/home__

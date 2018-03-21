@@ -16,7 +16,7 @@ def user_sign_in():
 
 
 # user home
-@app.route('/user/userhome')
+@app.route('/user/home')
 def user_home():
 	return render_template('user-home.html', title='My Profile')
 
