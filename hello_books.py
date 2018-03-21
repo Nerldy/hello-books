@@ -18,7 +18,13 @@ def user_sign_in():
 # user home
 @app.route('/user/home')
 def user_home():
-	return render_template('user-home.html', title='My Profile')
+	return render_template('user-home.html', title='My Library')
+
+
+# admin dashboard
+@app.route('/admin/home')
+def admin_home():
+	return render_template('admin-dashboard.html', title='Admin Home')
 
 
 if __name__ == '__main__':
