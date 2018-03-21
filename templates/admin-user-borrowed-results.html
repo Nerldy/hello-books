@@ -1,0 +1,82 @@
+{% extends 'base-admin.html' %}
+
+{% block main %}
+
+    <!--Search User Navbar-->
+    <nav class="navbar">
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input
+                        type="text" class="form-control" placeholder="Username Search" aria-label="Username"
+                        aria-describedby="basic-addon1">
+            </div>
+
+            <div class="dropdown">
+                <button
+                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Search Options
+                </button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Find all books yet to be returned</a>
+                    <a class="dropdown-item" href="#">Find all borrowed books</a>
+                </div>
+            </div>
+        </form>
+    </nav>
+
+    <h1 style="font-size: 1.5em">All books borrowed by UserName</h1>
+
+    <!--Add Book Modal Form-->
+    {% include 'modal-add-book.html' %}
+
+    <!--Search Library Navbar-->
+    <nav class="navbar" id="searchLibraryNav">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Library" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchLibraryButton">Search</button>
+        </form>
+    </nav>
+
+    <!--Admin Search Results Table-->
+    <table class="table table-sm table-striped table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ISBN-NO</th>
+            <th scope="col">Book Title</th>
+            <th scope="col">Rented</th>
+            <th scope="col">Due</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">978-1455570249</th>
+            <td>Make Your Bed: Little Things That Can Change Your Life</td>
+            <td>10-02-2018</td>
+            <td>27-03-2018</td>
+        </tr>
+        <tr>
+            <th scope="row">B00OICLVBI</th>
+            <td>The 5 Love Languages: The Secret to Love that Lasts</td>
+            <td>24-01-2018</td>
+            <td>14-04-2018</td>
+        </tr>
+        <tr>
+            <th scope="row">B074LZG7KS</th>
+            <td>The Art Of Saying NO: How To Stand Your Ground, Reclaim Your Time And Energy, And Refuse To Be Taken For
+                Granted
+            </td>
+            <td>19-03-2018</td>
+            <td>03-06-2018</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+{% endblock %}
