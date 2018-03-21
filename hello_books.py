@@ -22,6 +22,18 @@ def user_home():
 	return render_template('user-home.html', title='My Library')
 
 
+# admin search user not returned result
+@app.route('/admin/search/notreturned')
+def admin_search_not_returned():
+	return render_template('admin-not-returned-search-results.html')
+
+
+# # admin search user not returned result
+@app.route('/admin/search/userborrowed')
+def admin_search_user_borrowed():
+	return render_template('admin-user-borrowed-results.html')
+
+
 # admin dashboard
 @app.route('/admin/home')
 def admin_home():
