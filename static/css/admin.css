@@ -1,18 +1,27 @@
-#dropdownMenuButton, #dropdownMenuButton + button {
+#dropdownMenuButton, #dropdownMenuButton + button, #searchLibraryButton {
     margin: 0 0 0 10px;
     background-color: #f5f7dc;
     border: 1px solid #ced4da;
     color: #646573;
 }
 
-#dropdownMenuButton:hover, #dropdownMenuButton + button:hover {
+#dropdownMenuButton:hover, #dropdownMenuButton + button:hover, #searchLibraryButton:hover {
     background-color: #b5d99c;
     color: #0f0326;
+}
+
+#searchLibraryNav {
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 #basic-addon1 {
     background-color: #f5f7dc;
     color: #646573;
+}
+
+.navbar {
+    padding-left: 0;
 }
 
 h1 {

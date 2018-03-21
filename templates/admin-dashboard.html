@@ -1,6 +1,8 @@
 {% extends 'base-admin.html' %}
 
 {% block main %}
+
+    <!--Search User Navbar-->
     <nav class="navbar">
         <form class="form-inline">
             <div class="input-group">
@@ -31,11 +33,18 @@
 
     <h1>All Books</h1>
 
-
-
-
+    <!--Add Book Modal Form-->
     {% include 'modal-add-book.html' %}
 
+    <!--Search Library Navbar-->
+    <nav class="navbar" id="searchLibraryNav">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Library" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchLibraryButton">Search</button>
+        </form>
+    </nav>
+
+    <!--Book Card Template-->
     <article class="card">
         <div class="card-body">
             <h2 class="card-title">BOOK TITLE HERE</h2>
