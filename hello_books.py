@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 # user sign up
 @app.route('/user/signup')
+@app.route('/')
 def user_sign_up():
 	return render_template('user-sign-up.html', title='Sign Up')
 
