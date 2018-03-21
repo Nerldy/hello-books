@@ -1,0 +1,73 @@
+body {
+    background-color: #f5f7dc;
+    font-family: 'Karla', sans-serif !important;
+
+}
+
+.container {
+
+}
+
+header {
+    padding: 10px 0 30px;
+}
+
+/*
+Logo style
+-------------------------
+*/
+#helloBooksLogo {
+    max-width: 200px;
+    fill: #e65f5c;
+}
+
+
+/*
+Logo style
+-------------------------
+*/
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    font-weight: bold;
+    font-style: italic;
+    color: #e65f5c;
+    margin-bottom: 50px;
+}
+
+.form-group input {
+    border: none;
+    border-radius: 0;
+    border-bottom: #e65f5c 2px solid;
+    /*border-left: #e65f5c 2px solid;*/
+    /*border-right: #e65f5c 2px solid;*/
+    background-color: #f5f7dc;
+}
+
+.form-group label {
+    margin-bottom: 0;
+}
+
+form .btn {
+    background-color: #e65f5c;
+    border-radius: 20px;
+    color: #f5f7dc;
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #e65f5c;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+}
+
+main h1 a:link {
+    color: #716bb4;
+}
