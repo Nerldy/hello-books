@@ -27,5 +27,11 @@ def admin_home():
 	return render_template('admin-dashboard.html', title='Admin Home')
 
 
+# 404 error
+@app.errorhandler(404)
+def pg404(e):
+	return render_template('404.html'), 404
+
+
 if __name__ == '__main__':
 	app.run(debug=1)
