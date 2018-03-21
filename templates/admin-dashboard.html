@@ -1,8 +1,38 @@
 {% extends 'base-admin.html' %}
 
 {% block main %}
+    <nav class="navbar">
+        <form class="form-inline">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input
+                        type="text" class="form-control" placeholder="Username Search" aria-label="Username"
+                        aria-describedby="basic-addon1">
+            </div>
+
+            <div class="dropdown">
+                <button
+                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Search Options
+                </button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Find all books yet to be returned</a>
+                    <a class="dropdown-item" href="#">Find all borrowed books</a>
+                </div>
+            </div>
+        </form>
+    </nav>
 
     <h1>All Books</h1>
+
+
+
 
     {% include 'modal-add-book.html' %}
 
