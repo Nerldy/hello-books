@@ -6,8 +6,14 @@ Hello-Books is a simple application that helps manage a library and its processe
 
 You don't need to install anything. This is a static website. To view it just [click  here](https://nerldy.github.io/hello-books/)
 
-# Built With
- [Bootstrap](https://getbootstrap.com/)
+# Requires
+* Click 6.7
+* Flask 0.12.2
+* itsdangerous 0.24
+* Jinja2 2.10
+* MarkupSafe 1.0
+* Werkzeug 0.14.1
+
 
 
 
