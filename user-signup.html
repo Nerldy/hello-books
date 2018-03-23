@@ -1,35 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {% block head %}
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link
-                rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-                crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-        {% if title %}
-            <title>{% block title %}{% endblock %} - Hello Books</title>
-        {% else %}
-            <title>Hello Books</title>
-        {% endif %}
+    <link
+            href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i"
+            rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Satisfy"
+            rel="stylesheet">
+
+    <!--form css-->
+    <link
+            rel="stylesheet"
+            href="css/form.css">
+
+    <title>Hello Books - Sign Up</title>
 
 
-    {% endblock %}
 </head>
 <body>
 
     <div class="container">
 
         <header class="row justify-content-center">
-            <svg class="col-12" id="helloBooksLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 57.7">
+            <!--hello books logod-->
+            <svg
+                    class="col-12"
+                    id="helloBooksLogo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 103 57.7">
                 <g>
                     <path
                             d="M80.3,34.3c0.4-1.6,1.7-2.2,2.9-2.8c0.4-0.2,1.1-0.2,1.3,0.3c0.3,0.9,0.3,2-0.5,2.5c-1.5,1.1-1.8,3.1-3.3,4.2
@@ -92,8 +104,61 @@
         </header>
 
         <main>
-            {% block main %}
-            {% endblock %}
+
+            <h1>Welcome to <span>Hello Books.</span> If you already have an account with us, please, <br>
+                <a href="user-sign-in.html">click
+                    here to
+                    Sign In</a>
+            </h1>
+
+            <!--sign in form-->
+            <form>
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="first_name"
+                            required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="last_name"
+                            required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required>
+                    <small
+                            id="emailHelp"
+                            class="form-text text-muted">We'll never share your email with anyone else.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            required>
+                </div>
+
+                <button
+                        type="submit"
+                        class="btn">Sign Up
+                </button>
+            </form>
         </main>
 
     </div>
