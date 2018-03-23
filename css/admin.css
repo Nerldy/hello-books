@@ -46,6 +46,7 @@ h2 {
     padding-top: 20px;
 }
 
+
 body {
     background-color: #f5f7dc;
     font-family: 'Karla', sans-serif !important;
@@ -65,7 +66,7 @@ nav {
     margin-top: 50px;
 }
 
-nav a:link {
+nav a:link, nav a:visited {
     color: #0f0326 !important;
 }
 

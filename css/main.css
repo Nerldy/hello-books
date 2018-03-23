@@ -40,13 +40,27 @@ nav {
     margin-top: 50px;
 }
 
-nav a:link {
+nav a:link, nav a:visited {
     color: #b5d99c !important;
 }
 
 nav a:hover {
     color: #ffff82 !important;
     font-weight: bold;
+}
+
+a.currentpage {
+    color: #ffff82 !important;
+    font-size: 2em;
+}
+
+.returned-book {
+    background-color: #9f9baa !important;
+    color: #646573 !important;
+}
+
+.returned-book .card-title {
+    color: #646573 !important;
 }
 
 /*

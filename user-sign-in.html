@@ -1,41 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {% block head %}
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link
-                rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-                crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        {% block css %}
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        {% endblock %}
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i"
+            rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Satisfy"
+            rel="stylesheet">
 
-        {% if title %}
-            <title>{% block title %}{% endblock %} - Hello Books</title>
-        {% else %}
-            <title>Hello Books</title>
-        {% endif %}
-    {% endblock %}
+    <!--form css-->
+    <link
+            rel="stylesheet"
+            href="css/form.css">
+
+    <title>Hello Books - Sign In</title>
+
 </head>
 <body>
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4 my-nav">
-                <div class="sticky-top">
-                    <a href="#">
-                        <!--Hello Books Logo-->
-                        <svg class="hellobookslogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 57.7">
-                            <g>
-                                <path
-                                        d="M80.3,34.3c0.4-1.6,1.7-2.2,2.9-2.8c0.4-0.2,1.1-0.2,1.3,0.3c0.3,0.9,0.3,2-0.5,2.5c-1.5,1.1-1.8,3.1-3.3,4.2
+
+        <header class="row justify-content-center">
+            <!--hello books logo-->
+            <svg
+                    class="col-12"
+                    id="helloBooksLogo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 103 57.7">
+                <g>
+                    <path
+                            d="M80.3,34.3c0.4-1.6,1.7-2.2,2.9-2.8c0.4-0.2,1.1-0.2,1.3,0.3c0.3,0.9,0.3,2-0.5,2.5c-1.5,1.1-1.8,3.1-3.3,4.2
 		c1.2-0.2,2-1,2.8-1.8c1.4-1.6,2.8-3.2,4.8-4.2c0.1-0.1,0.2-0.2,0.3-0.2c3.1-0.8,6.3-1.1,9.4-0.9c2,0.2,3.3,1.5,3.7,3.3
 		c0.3,1.5,1.4,2.4,1.7,3.9c0.1,0.5,0.1,0.9-0.2,1.3c-2.2,2.6-4.8,4.4-8,5.2c-2.9,0.7-5.7,1.4-8.6,1.9c-2.3,0.4-4.6,0.3-7,0.6
 		c-5.8,0.6-11.7,0.6-17.4,1.5c-5.2,0.9-10.4,0.1-15.6,0.3c-2.4,0.1-4.9,0.3-6.8,2.1c-1.1,1-2.6,0.9-3.8,1.3
@@ -60,8 +68,8 @@
 		c0.3,0.3,0.8,0,1.1-0.3C62.1,42.7,62.8,42.1,63.4,41.5z M76.4,32.8c0.1,0.1,0.3,0.1,0.4,0.2c0.4-0.6,0.7-1.3,1.1-1.9
 		c0.5-0.7,0.1-1.2-0.5-1.5c-0.8-0.4-0.6,0.4-0.8,0.8C76.2,31.2,76.4,32,76.4,32.8z M61,40.3c0.7,0.3,1.2-0.2,1.7-0.2
 		c0.8-0.1,1.5-0.6,1.4-1c-0.2-0.7-1,0-1.5-0.1C61.8,38.9,61.3,39.4,61,40.3z"/>
-                                <path
-                                        d="M34.6,28.8c0.8,0.7,0.6,1.4,0.3,2.2c-0.7,1.8-1.8,3.5-0.9,5.6c0.5,1.1,1,1.6,2.2,1c1.6-0.8,2.7-2.1,2.8-4
+                    <path
+                            d="M34.6,28.8c0.8,0.7,0.6,1.4,0.3,2.2c-0.7,1.8-1.8,3.5-0.9,5.6c0.5,1.1,1,1.6,2.2,1c1.6-0.8,2.7-2.1,2.8-4
 		c0.2-3.3,0.9-6.6,0.9-9.9c0-0.5,0-1.5,0.9-1.6c0.9-0.1,1,0.7,1.1,1.4c0.3,1.7,0.5,3.4-0.2,5.1c-0.6-0.9,0.2-1.9-0.2-2.8
 		c-0.1-0.3-0.1-0.6-0.5-0.5c-0.3,0-0.3,0.3-0.4,0.5c-0.2,1.8-0.5,3.7-0.7,5.5c0,0.3-0.2,1.4,0.8,0.5c0.1-0.1,0.3,0.3,0.1,0.6
 		c-0.5,0.9-0.9,1.8-1,2.9c0,0.3-0.1,0.8,0.3,0.9c0.4,0.1,0.6-0.2,0.7-0.4c0.7-1.7,3-2.6,2.5-4.9c-0.1-0.5,0.4-1.1,0.9-1.5
@@ -81,45 +89,74 @@
 		c-0.5,0.9-0.8,1.9,0,2.6c0.9,0.9,1.8,0.2,2.5-0.4c2.3-2.1,4.9-4.1,4.7-7.7c0-0.5-0.3-1.5,0.9-1.3C34.4,28.9,34.5,28.8,34.6,28.8z
 		 M45.7,32.6c0,0.2,0,0.5,0,0.7c0,0.5-0.2,1.2,0.4,1.5c0.6,0.3,1.1-0.3,1.5-0.7c1.1-1.2,2.1-2.6,2.8-4.1c0.2-0.5,0.6-1.2,0.1-1.7
 		c-0.5-0.4-1.1-0.5-1.9-0.3C46.4,28.6,45.7,29.7,45.7,32.6z M60,15.3c3.8,4,6.4,8,4.7,13.8C68.2,25.3,67.3,17.8,60,15.3z"/>
-                                <path
-                                        d="M58.7,36.1c0.3,0.1,0.7,0.2,1,0.3C59.4,38,58,38.7,57,39.7c-1.1,1.3-2.6,2.4-3.9,3.6c-0.6,0.5-1.2,0.7-1.9,0.7
+                    <path
+                            d="M58.7,36.1c0.3,0.1,0.7,0.2,1,0.3C59.4,38,58,38.7,57,39.7c-1.1,1.3-2.6,2.4-3.9,3.6c-0.6,0.5-1.2,0.7-1.9,0.7
 		c-0.3,0-0.5,0-0.8,0c0.2-0.7,1.1-0.6,1.3-1.3c-0.5-0.4-0.9,0.2-1.3,0.2c-0.1-0.1-0.2-0.3-0.3-0.4C52.9,40.3,56.3,38.9,58.7,36.1z"
-                                />
-                                <path
-                                        d="M34.6,28.8c-0.1,0.1-0.3,0.2-0.4,0.3c-0.5-0.2-0.8-0.5-0.8-1c0.1-1.5,0.1-3.1,0.2-4.6c0-0.4,0.1-0.7,0.5-0.8
+                    />
+                    <path
+                            d="M34.6,28.8c-0.1,0.1-0.3,0.2-0.4,0.3c-0.5-0.2-0.8-0.5-0.8-1c0.1-1.5,0.1-3.1,0.2-4.6c0-0.4,0.1-0.7,0.5-0.8
 		c0.5-0.1,0.5,0.4,0.5,0.7c0,1.5,1,3,0.2,4.6c-0.2,0.4,0.4,0.4,0.4,0.6C35.4,29.4,34.8,28.6,34.6,28.8z"/>
-                                <path d="M50.4,42.9c-1.2,1-2.4,1.8-3.9,2.2c-0.2-0.2-0.3-0.3-0.5-0.5c1.3-0.9,2.6-1.6,4.1-2.1C50.2,42.7,50.3,42.8,50.4,42.9z"/>
-                                <path d="M46,44.7c0.2,0.2,0.3,0.3,0.5,0.5c-1.1,0.6-2.2,1.5-3.6,1.4C43.4,45.1,44.9,45.3,46,44.7z"/>
-                            </g>
-                        </svg>
-                    </a>
+                    <path d="M50.4,42.9c-1.2,1-2.4,1.8-3.9,2.2c-0.2-0.2-0.3-0.3-0.5-0.5c1.3-0.9,2.6-1.6,4.1-2.1C50.2,42.7,50.3,42.8,50.4,42.9z"/>
+                    <path d="M46,44.7c0.2,0.2,0.3,0.3,0.5,0.5c-1.1,0.6-2.2,1.5-3.6,1.4C43.4,45.1,44.9,45.3,46,44.7z"/>
+                </g>
+            </svg>
+        </header>
 
-                    <!--Sidebar Navigation-->
-                    <nav class="nav flex-column">
-                        <a href="#" class="nav-link ">MY PROFILE</a>
-                        <a href="#" class="nav-link">TIME MACHINE</a>
-                        <a href="#" class="nav-link">RENT A BOOK</a>
-                        <a href="#" class="nav-link">SIGN OUT</a>
-                    </nav>
+        <main>
+
+            <h1>Welcome to <span>Hello Books.</span><br> Please Sign In Below
+            </h1>
+
+            <!--sign in form-->
+            <form>
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="first_name"
+                            required>
                 </div>
-            </div>
 
-            <div class="col-sm-8">
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="last_name"
+                            required>
+                </div>
 
-                <header class="row align-items-center justify-content-end">
-                    {% if title %}
-                        <h1>{{ title }}</h1>
-                    {% else %}
-                        <h1>Welcome to Hello Books</h1>
-                    {% endif %}
-                </header>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            required>
+                    <small
+                            id="emailHelp"
+                            class="form-text text-muted">We'll never share your email with anyone else.
+                    </small>
+                </div>
 
-                <main>
-                    {% block main %}
-                    {% endblock %}
-                </main>
-            </div>
-        </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            required>
+                </div>
+
+                <button
+                        type="submit"
+                        class="btn">Sign In
+                </button>
+            </form>
+        </main>
+
     </div>
 
     <!-- Optional JavaScript -->
