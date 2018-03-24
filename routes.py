@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ books = [
 @app.route('/api/v1/books')
 def get_all_books():
 	"""Retrieves all books"""
-	pass
+	return jsonify({"books": books})
 
 
 # GET /api/books/<bookId> - Get a book
