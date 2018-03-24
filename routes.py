@@ -14,28 +14,28 @@ books = [
 
 
 # GET /api/books - Retrieves all books
-@app.route('/api/books')
+@app.route('/api/v1/books')
 def get_all_books():
 	"""Retrieves all books"""
 	pass
 
 
 # GET /api/books/<bookId> - Get a book
-@app.route('/api/books/<bookid>')
+@app.route('/api/books/v1/<bookid>')
 def get_book(bookid):
 	"""Retrieves one book through it's Id"""
 	pass
 
 
 # POST /api/books - Add a book
-@app.route('/api/books', methods=['POST'])
+@app.route('/api/v1/books', methods=['POST'])
 def create_book():
 	"""Adds a book to the database"""
 	pass
 
 
 # POST /api/users/books/<bookId> - Borrow a book
-@app.route('/api/users/books/<bookid>', methods=['POST'])
+@app.route('/api/v1/users/books/<bookid>', methods=['POST'])
 def create_user_book(bookid):
 	"""Creates user book"""
 	pass
